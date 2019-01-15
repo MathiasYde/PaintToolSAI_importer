@@ -50,7 +50,7 @@ for folder in folders: #Runs for every folder
         conf_file = "brushform.conf"
 
     print(folder)
-    with open(root_folder + conf_file, "w") as cf: 
+    with open(root_folder + conf_file, "a") as cf: 
         for file in listdir(root_folder + folder):
             if folder == "brushtex/":
                 print("      "+file)
